@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUT Champs Stat Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fyll i din matchstatistik</h1>
+    <form id="matchForm">
+        <label for="resultat">Slutresultat:</label>
+        <input type="text" id="resultat" name="resultat"><br>
+        <span id="resultatError" style="color: red;"></span><br>
+      <label for="bollinnehav">Bollinnehav (%):</label>
+      <input type="number" id="bollinnehav" name="bollinnehav"><br><br>
+  
+      <label for="xg">xG (Expected Goals):</label>
+      <input type="number" step="0.01" id="xg" name="xg"><br><br>
+  
+      <button type="submit">Skicka in match</button>
+    </form>
+  
+    <div id="responseMessage"></div> <!-- Plats för att visa meddelande -->
+  
+    <script src="script.js"></script>
+  </body>  
+</html>
